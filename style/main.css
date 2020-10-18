@@ -12,3 +12,37 @@ body {
 .clear {
     clear: both;
 }
+
+.container {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+header {
+    padding: 30px 2%;
+}
+
+header div.logo {
+    float: left;
+}
+
+header nav.desktop {
+    float: right;
+    position: relative;
+    top: 10px;
+}
+
+header nav.desktop ul {
+    list-style-type: none;
+}
+
+header nav.desktop ul li a {
+    text-decoration: none;
+}
+
+header nav.desktop ul li {
+    float: left;
+    font-size: 23px;
+    padding: 0 30px;
+}
