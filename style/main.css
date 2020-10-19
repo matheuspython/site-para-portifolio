@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
 }
 
 html,
@@ -40,17 +41,19 @@ header nav.desktop ul {
 
 header nav.desktop ul li a {
     text-decoration: none;
+    color: black;
 }
 
 header nav.desktop ul li {
     float: left;
     font-size: 23px;
+    font-style: italic;
     padding: 0 30px;
 }
 
 section.banner {
     width: 100%;
-    height: 100vw;
+    height: 600px;
     min-height: 600px;
     max-height: 800px;
     background-color: black;
@@ -60,13 +63,81 @@ section.banner {
     background-repeat: no-repeat;
 }
 
+.text-banner {
+    padding: 100px;
+}
+
+.text-banner-single {
+    font-style: italic;
+    width: 314px;
+    height: 60px;
+    margin-top: 20px;
+    background-image: url('../images/box-text.png');
+    background-size: 100% 100%;
+    color: white;
+    font-size: 23px;
+    padding: 12px 30px;
+    text-transform: uppercase;
+}
+
+.text-banner .text-banner-single:nth-of-type(2) {
+    width: 200px;
+    height: 50px;
+    position: relative;
+    left: -10px;
+}
+
+.text-banner .text-banner-single:nth-of-type(3) {
+    width: 170px;
+    height: 50px;
+    position: relative;
+    left: -20px;
+}
+
+.text-banner .text-banner-single a {
+    text-decoration: none;
+    color: black;
+}
+
+.text-banner .text-banner-single:nth-of-type(4) {
+    width: 320px;
+    height: 50px;
+    background-image: url('../images/box-white-text.png');
+    position: relative;
+    left: -30px;
+    font-size: 21px;
+}
+
 
 /*começo medioa queries*/
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1400px) {
     section.banner {
+        background-size: 90% auto;
+        background-position: 200% 100%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    section.banner {
+        background-size: cover;
+        background-position: center;
         height: 70vw;
-        min-height: 0;
-        max-height: 800px;
+        min-height: 500px;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    nav.desktop {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .text-banner {
+        padding: 30px;
+    }
+    .text-banner-single {
+        font-size: 18px;
     }
 }
