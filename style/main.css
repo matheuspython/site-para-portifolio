@@ -143,6 +143,36 @@ section.banner {
     font-size: 21px;
 }
 
+section.veiculos-destaque {
+    padding: 90px 2%;
+}
+
+.line-titulo {
+    position: relative;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+section.veiculos-destaque h2 {
+    text-align: center;
+    font-size: 27px;
+    font-style: italic;
+    text-transform: uppercase;
+    position: relative;
+    display: inline-block;
+    background-color: white;
+    padding: 0 20px;
+}
+
+.ln1 {
+    position: absolute;
+    top: 20px;
+    height: 2px;
+    width: 100%;
+    background: black;
+}
+
 
 /*começo medioa queries*/
 
