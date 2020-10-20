@@ -35,6 +35,41 @@ header nav.desktop {
     top: 40px;
 }
 
+nav.mobile {
+    margin-top: 40px;
+    display: none;
+    width: 32px;
+    height: 32px;
+    background-size: 100% 100%;
+    cursor: pointer;
+    background-image: url('../images/icon_menu.png');
+    float: right;
+}
+
+nav.mobile ul {
+    display: none;
+    list-style-type: none;
+    width: 100%;
+    text-align: center;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    top: 100px;
+    border-bottom: 5px solid #eb2d2d;
+    z-index: 999;
+}
+
+nav.mobile li {
+    font-size: 23px;
+    padding: 20px 0px;
+    font-style: italic;
+}
+
+nav.mobile li a {
+    text-decoration: none;
+    color: black;
+}
+
 header nav.desktop ul {
     list-style-type: none;
 }
@@ -128,6 +163,9 @@ section.banner {
 }
 
 @media screen and (max-width: 720px) {
+    nav.mobile {
+        display: block;
+    }
     nav.desktop {
         display: none;
     }
