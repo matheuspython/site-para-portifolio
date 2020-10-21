@@ -159,7 +159,7 @@ section.veiculos-destaque .container {
     margin: 0 auto;
 }
 
-section.veiculos-destaque .line-titulo h2 {
+.line-titulo h2 {
     text-align: center;
     font-size: 27px;
     font-style: italic;
@@ -205,14 +205,12 @@ section.veiculos-destaque .line-titulo h2 {
     padding-top: 8px;
 }
 
-.vitrine-destaque a {
-    margin-left: 8px;
+.btn1 {
     width: 150px;
     font-size: 16px;
     line-height: 40px;
     display: block;
     text-align: center;
-    margin-top: 10px;
     background-color: #eb2d2d;
     color: white;
     font-style: italic;
@@ -220,12 +218,204 @@ section.veiculos-destaque .line-titulo h2 {
     border-bottom: 5px solid #b21e1e;
 }
 
-.vitrine-destaque a:hover {
-    background-color: #b32a2a;
+.vitrine-destaque a {
+    margin-left: 8px;
+    margin-top: 10px;
+}
+
+.servicos-descricao {
+    display: flex;
+}
+
+.half1 {
+    padding-right: 100px;
+    width: 50%;
+    padding: 90px 0;
+    background: #242424;
+    color: white;
+    text-align: right;
+}
+
+.half1 a {
+    margin-right: 4px;
+}
+
+.half1-wraper {
+    padding-right: 30%;
+    text-align: left;
+    display: inline-block;
+}
+
+.half1-wraper h2 {
+    font-weight: normal;
+    font-style: italic;
+    font-size: 32px;
+}
+
+.half1-wraper ul {
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.half1-wraper li {
+    margin-left: 15px;
+}
+
+.half1-wraper a {
+    margin-left: 40px;
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+.half2 {
+    width: 50%;
+    padding: 90px 100px;
+    background: #eb2d2d;
+    color: white;
+}
+
+.half2 h2 {
+    font-weight: normal;
+    font-style: italic;
+    font-size: 32px;
+}
+
+.half2 .depoimento-single {
+    margin-top: 19px;
+}
+
+.depoimento-single p {
+    font-size: 22px;
+}
+
+.navigation {
+    float: left;
+    margin-top: 30px;
+}
+
+.navigation img {
+    cursor: pointer;
+    margin: 0 20px;
+}
+
+.arrows {
+    float: left;
+}
+
+.nome-depoimento {
+    float: right;
+    color: #252525;
+    font-size: 23px;
+}
+
+section.contato {
+    padding: 80px 2%;
+}
+
+section.contato form {
+    max-width: 600px;
+    margin: 50px auto;
+}
+
+section.contato .input-wraper {
+    float: left;
+    padding: 10px;
+    margin-top: 7px;
+}
+
+section.contato input[type="text"] {
+    width: 100%;
+    border: 1px solid #ccc;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 15px;
+}
+
+section.contato textarea {
+    width: 100%;
+    border: 1px solid #ccc;
+    height: 120px;
+    padding: 8px;
+    resize: none;
+}
+
+section.contato input[type=submit] {
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+.w100 {
+    width: 100%;
+}
+
+.w50 {
+    width: 50%;
+}
+
+footer {
+    padding: 40px;
+    background: #252525;
+}
+
+footer nav {
+    float: left;
+}
+
+footer nav ul {
+    list-style-type: none;
+}
+
+footer nav ul li {
+    float: left;
+    font-style: italic;
+    padding: 0 35px;
+    font-size: 19px;
+}
+
+footer nav ul a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+footer p {
+    float: right;
+    color: white;
+    font-size: 19px;
+    font-style: italic;
 }
 
 
 /*começo medioa queries*/
+
+@media screen and (max-width: 850px) {
+    .half1-wraper {
+        display: block;
+        margin-left: 0;
+        margin-top: 15px;
+    }
+    .half1-wraper ul {
+        margin-left: 8px;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .half1 {
+        text-align: center;
+    }
+    .half1-wraper {
+        text-align: left;
+        padding-right: 0;
+    }
+    .half1-wraper a {
+        display: block;
+        margin-left: 0;
+        margin-top: 15px;
+    }
+}
 
 @media screen and (max-width: 1400px) {
     section.banner {
@@ -243,7 +433,29 @@ section.veiculos-destaque .line-titulo h2 {
     }
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 768px) {
+    footer nav {
+        display: none;
+    }
+    footer p {
+        padding: 0 2%;
+        float: none;
+        text-align: center;
+    }
+    section.servicos-descricao {
+        flex-direction: column;
+    }
+    .w50 {
+        width: 100%;
+    }
+    .half1 {
+        text-align: center;
+    }
+    .half1,
+    .half2 {
+        padding: 80px 4%;
+        width: 100%;
+    }
     nav.mobile {
         display: block;
     }
