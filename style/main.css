@@ -388,6 +388,113 @@ footer p {
     font-style: italic;
 }
 
+section.venda {
+    min-height: 90%;
+    padding: 90px 0;
+}
+
+.content-venda {
+    margin-top: 40px;
+}
+
+.sidebar {
+    float: left;
+    width: 30%;
+}
+
+.search1 {
+    width: 300px;
+}
+
+.search1 h2 {
+    font-size: 24px;
+    color: black;
+    font-weight: normal;
+}
+
+.search1 .barra-preco {
+    width: 100%;
+    height: 20px;
+    margin-top: 8px;
+    background-color: white;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    position: relative;
+}
+
+.barra-preco-fill {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 30%;
+    height: 20px;
+    border-radius: 20px;
+    background: rgb(200, 200, 200);
+}
+
+.pointer-barra {
+    cursor: pointer;
+    width: 26px;
+    height: 26px;
+    border-radius: 8px;
+    background: rgb(210, 210, 210);
+    position: absolute;
+    left: calc(30% - 13px);
+    top: -3px;
+    border: 1px solid black;
+}
+
+.valor-pesquisa {
+    margin-top: 8px;
+}
+
+.valor-pesquisa p {
+    color: black;
+    font-size: 15px;
+}
+
+.valor-pesquisa p:nth-of-type(1) {
+    float: left;
+}
+
+.valor-pesquisa p:nth-of-type(2) {
+    float: right;
+}
+
+.search2 {
+    margin-top: 40px;
+}
+
+.search2 h2 {
+    font-size: 24px;
+    color: black;
+    font-weight: normal;
+}
+
+.form-venda-wraper {
+    margin-top: 10px;
+}
+
+.form-venda-wraper input[type=checkbox] {
+    display: none;
+}
+
+.form-venda-wraper label {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    vertical-align: top;
+}
+
+.form-venda-wraper span {
+    padding: 0 10px;
+    cursor: pointer;
+    vertical-align: top;
+    display: inline-block;
+}
+
 
 /*começo medioa queries*/
 
