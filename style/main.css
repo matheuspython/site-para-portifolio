@@ -147,14 +147,19 @@ section.veiculos-destaque {
     padding: 90px 2%;
 }
 
+section.veiculos-destaque .container {
+    max-width: 1000px;
+    padding: 40px 0;
+}
+
 .line-titulo {
     position: relative;
     text-align: center;
-    max-width: 800px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
-section.veiculos-destaque h2 {
+section.veiculos-destaque .line-titulo h2 {
     text-align: center;
     font-size: 27px;
     font-style: italic;
@@ -165,12 +170,58 @@ section.veiculos-destaque h2 {
     padding: 0 20px;
 }
 
+.vitrine-destaque {
+    float: left;
+    width: 33.3%;
+}
+
 .ln1 {
     position: absolute;
     top: 20px;
     height: 2px;
     width: 100%;
     background: black;
+}
+
+.vitrine-destaque .carro-img {
+    width: 100%;
+    padding-top: 100%;
+    background-size: 100% 100%;
+    border: 8px solid white;
+}
+
+.vitrine-destaque h2 {
+    padding-left: 8px;
+    color: black;
+    font-style: italic;
+    font-size: 20px;
+}
+
+.vitrine-destaque p {
+    padding-left: 8px;
+    color: #353535;
+    font-size: 15px;
+    font-style: italic;
+    padding-top: 8px;
+}
+
+.vitrine-destaque a {
+    margin-left: 8px;
+    width: 150px;
+    font-size: 16px;
+    line-height: 40px;
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    background-color: #eb2d2d;
+    color: white;
+    font-style: italic;
+    text-decoration: none;
+    border-bottom: 5px solid #b21e1e;
+}
+
+.vitrine-destaque a:hover {
+    background-color: #b32a2a;
 }
 
 
@@ -207,5 +258,28 @@ section.veiculos-destaque h2 {
     }
     .text-banner-single {
         font-size: 18px;
+    }
+    section.veiculos-destaque .container {
+        max-width: 1000px;
+        padding: 40px 0;
+        text-align: center;
+    }
+    .vitrine-destaque {
+        width: 80%;
+        float: none;
+        display: inline-block;
+        margin-top: 20px;
+    }
+    .vitrine-destaque a {
+        display: inline-block;
+    }
+    section.veiculos-destaque .line-titulo h2 {
+        font-size: 23px;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .vitrine-destaque {
+        width: 100%;
     }
 }
