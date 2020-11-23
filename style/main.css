@@ -429,7 +429,7 @@ section.venda {
     width: 30%;
     height: 20px;
     border-radius: 20px;
-    background: rgb(200, 200, 200);
+    background: linear-gradient(to bottom, rgb(255, 255, 255), rgb(200, 200, 200));
 }
 
 .pointer-barra {
@@ -437,11 +437,11 @@ section.venda {
     width: 26px;
     height: 26px;
     border-radius: 8px;
-    background: rgb(210, 210, 210);
+    background: linear-gradient(to bottom, rgb(255, 255, 255), rgb(180, 180, 180));
     position: absolute;
     left: calc(30% - 13px);
     top: -3px;
-    border: 1px solid black;
+    border: 1px solid #777;
 }
 
 .valor-pesquisa {
@@ -486,6 +486,22 @@ section.venda {
     border: 1px solid #ccc;
     border-radius: 3px;
     vertical-align: top;
+    position: relative;
+}
+
+.circle {
+    display: none;
+    width: 8px;
+    height: 8px;
+    border-radius: 4px;
+    background: black;
+    position: absolute;
+    left: 6px;
+    top: 6px;
+}
+
+.form-venda-wraper input[type=checkbox]:checked+label>.circle {
+    display: block;
 }
 
 .form-venda-wraper span {
@@ -493,6 +509,13 @@ section.venda {
     cursor: pointer;
     vertical-align: top;
     display: inline-block;
+}
+
+.vitrine-venda {
+    position: relative;
+    top: -300px;
+    float: right;
+    width: 70%;
 }
 
 
